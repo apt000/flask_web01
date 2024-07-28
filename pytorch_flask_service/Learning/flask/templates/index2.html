@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hello world
+<br>
+{{ data }}
+<br>
+{{ data['name'] }}
+<br>
+{{ data.age }}
+<br>
+mylist_li2:{{ data.mylist | li2}}
+<br>
+mylist[1]:{{ data.mylist[1] }}
+<br>
+count:{{ data.mylist[1] + data.mylist[2]}}
+
+<br>
+<br>
+过滤器的使用
+<br>
+全部大写<br>
+{{ 'hello world' | upper }}<br>
+首字母大写<br>
+{{ 'hello world' | title }}<br>
+替换<br>
+{{ 'hello world' | replace('hello', 'hi') }}<br>
+</body>
+</html>
